@@ -1,0 +1,134 @@
+#header 
+{
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3;
+
+    .logo 
+    {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+
+    #navigation 
+    {
+        #main-nav 
+        {
+            float: left;
+
+            div 
+            {
+                float:left;
+                padding: 25px 15px;
+                position:relative;
+                margin-top: 0px;
+                text-align: center;
+                border-right: 1px solid #e3e3e3;
+                min-width: 100px;
+
+                &.first 
+                {
+                    border-left: 1px solid #e3e3e3;
+                }
+                &:hover, &.active
+                {
+                    color:#333;
+                }
+                &.nohover 
+                {
+                    background: none;
+                }
+                &:hover a, &.active a
+                {
+                    color: #fff;
+                    color: #333;
+                }
+
+                a 
+                {
+                    color: #43565c;
+                    text-transform: uppercase;
+                    font-family: 'Open Sans';font-family: "museo-sans",sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 0.96em;
+
+                    &:hover 
+                    {
+                        color: #333;
+                    }
+                }
+            }
+        }
+        #sub-nav 
+        {
+            ul 
+            {
+                list-style:none;
+                overflow: hidden;
+                position: absolute;
+                background: #1a90b2;
+                min-height: 45px;
+                width: 100%;
+                text-align: center;
+                margin-top: 0px;
+                z-index: 9999;
+
+                li 
+                { 
+                    display: inline; 
+                    margin: 0;
+
+                    a
+                    {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 0.90em;
+                        margin: 0 20px;
+                        line-height: 40px;
+                        display: inline-block;
+                        min-width: auto;
+
+                        &:hover 
+                        {
+                            color: #fcf6c3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* mobile styles */
+.mobile-header{
+    .row
+    {
+        height: 54px;
+
+        i
+        {
+            margin-top: 7px;
+            font-size: 40px;
+            color: #359cbe;
+            display: block;
+        }
+
+        div
+        {
+            &:first-child
+            {
+                text-align: left;
+            }
+            &:nth-child(2)
+            {
+                text-align: center;
+            }
+            &:last-child
+            {
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+app/components
+node_modules
+app/css/*
+.sass-cache
+dist
+app/*.html
