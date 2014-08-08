@@ -121,6 +121,11 @@ hr
 {
     max-width: 1170px;
 }
+.main
+{
+    background-color: #f9f9f9;
+    padding:40px 0;
+}
 .btn 
 {
     background: #444;
@@ -355,6 +360,25 @@ hr
 {
     text-align: center;
     text-transform: uppercase;
+}
+#breadcrumbs 
+{
+    font-size: 0.68em;
+    color: #c2c2c2;
+    margin-left: 20px;
+
+    a 
+    {
+        color: #f37e49;
+        font-size: 1em;
+        text-decoration: none !important;
+
+        &:hover 
+        {
+            color: #444;
+            text-decoration: none;
+        }
+    }
 }
 
 
