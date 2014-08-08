@@ -131,8 +131,8 @@ module.exports = function (grunt) {
             options: {
                 sassDir: '<%= redlight.app %>/src/sass',
                 cssDir: '<%= redlight.app %>/css',
-                // imagesDir: '<%= redlight.app %>/img',
-                // httpGeneratedImagesPath: '/img',
+                imagesDir: '<%= redlight.app %>/img',
+                httpGeneratedImagesPath: '/img',
                 outputStyle: 'nested'
             },
             dist: {
