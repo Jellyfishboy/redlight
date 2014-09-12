@@ -151,6 +151,7 @@ module.exports = function (grunt) {
                 src: [
                     '<%= redlight.app %>/js/vendor/classie.js',
                     '<%= redlight.app %>/js/vendor/mlpushmenu.js',
+                    '<%= redlight.app %>/components/bootstrap/dist/js/bootstrap.min.js',
                     '<%= redlight.app %>/js/lib/_redlight.js'
                 ],
                 dest: '<%= redlight.app %>/js/redlight.js',

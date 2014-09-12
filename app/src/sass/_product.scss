@@ -1,5 +1,6 @@
 .product
 {
+    padding:0 0 40px;
 
     .product-main
     {
@@ -199,66 +200,6 @@
     display: inline-block;
 }
 
-.tab-content .product-discuss {
-    border-bottom: 1px solid #e8e8e8;
-    padding: 20px 0;
-    margin: 0;
-}
-
-.tab-content .product-discuss .avatar img {
-    width: 70px;
-    height: 70px;
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-}
-
-.tab-content .product-discuss h1, .tab-content .product-discuss p {
-    margin: 0;
-    padding: 0;
-}
-
-.tab-content .product-discuss h1 {
-    color: #b4b4b4;
-    font-size: 0.82em;
-    padding-bottom: 5px;
-}
-
-.tab-content .product-discuss p {
-    color: #444;
-    font-size: 0.78em;
-    line-height: 20px;
-}
-
-.tab-content .product-discuss h1 a {
-    font-weight: 700;
-    color: #47aec7;
-}
-
-.tab-content .product-discuss h1 a:hover {
-    color: #444;
-    text-decoration: none;
-}
-
-.tab-content .product-discuss.last {
-    border-bottom: 0;
-}
-
-
-.tab-content .product-discuss .form-control {
-    border-radius: 0;
-    max-width: 60%;
-    color: #d9d9d9;
-    border: 1px solid #eae6e2;
-}
-.tab-content .product-discuss .form-textarea {
-  border-radius: 0;
-  color: #d9d9d9;
-  border: 1px solid #eae6e2;
-  font-size: 12px;
-  width:100%;
-  height: auto;
-}
 .product-detail #myTab li a {
     text-transform: uppercase;
     font-size: 0.78em;
@@ -274,10 +215,6 @@
     background-image: none;
     padding-top: 0;
     border-top: 1px solid #D9D9D9;
-}
-
-#header {
-    border-bottom: 1px solid #f3f3f3;
 }
 
 .product-detail .tab-data {
