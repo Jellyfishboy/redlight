@@ -1,5 +1,5 @@
 #inner-block.tab-container.innertabs {
-    background: image_url('../img/grad-2.png') repeat-x top #fff;
+    background: image-url('grad-2.png') repeat-x top #fff;
     padding-bottom: 0;
     padding-top: 10px;
     border-bottom: 1px solid #d9d9d9;
@@ -90,7 +90,7 @@
         margin-left: -40px;
 
         li {
-            background: image_url('tick.png') top left no-repeat;
+            background: image-url('tick.png') top left no-repeat;
             padding-left: 30px;
             color: #555;
             font-size: 0.86em;

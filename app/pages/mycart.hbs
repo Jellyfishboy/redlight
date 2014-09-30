@@ -1,0 +1,138 @@
+<div class='login checkout' id='inner-block'>
+  <div class='container'>
+    <div class='row box-jembot'>
+      <div class='hidden-xs'>
+        <div class='col-lg-8 col-sm-8'>
+          <h3>Your Shopping Bag</h3>
+        </div>
+        <div class='col-lg-1 col-sm-1 white-kopet hidden-xs'>
+          <div class='vertical-line'></div>
+        </div>
+        <div class='col-lg-3 col-sm-3'>
+          <h3 class='order-summary'>Order Summary</h3>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-12 col-sm-12 login-form checkoutPanel' id='box'>
+        <div class='row'>
+          <!-- <div class="mainTitle hidden-xs"> -->
+          <!-- <div class="col-lg-9 col-sm-9"> -->
+          <!-- <h3 class="checkout-mtitle">Your Shopping Bag</h3> -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-3 col-sm-3"> -->
+          <!-- <h3 class="checkout-mtitle">Order Summary</h3> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <div class="col-lg-8 col-sm-8">
+            <!-- checkout form -->
+            <h3 class="checkout-mtitle visible-xs">Your Shopping Bag</h3>
+
+            <br>
+
+            <table id="cart-mobile" class="table">
+              <tbody>
+                <tr>
+                  <td><img class="cartImg" src="/system/image_collection_record/file_name/69/processed_900360.jpg"></td>
+                  <td><h3>Gitman Casual Shirt</h3>By <a href="#">Tom James</a>
+                    <br>
+                    Size: S
+                    <br />
+                    Color : Brown
+                  </td>
+                </tr>
+                <tr>
+                  <td>Quantity</td><td id="cartQty-td">
+                  <input type="input" class="cart-qty" value="1">
+          <!--
+          <span class="cart-shipping">Economy Int'l Shipping</span></td>
+        -->
+      </tr>
+      <tr>
+        <td>Unit Price</td><td id="price">$139
+        <br>
+          <!--
+            <small>+ $49.95</small></td>
+          -->
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table id="cart" class="table">
+      <tbody>
+
+        <tr>
+          <td class="first"><img class="cartImg" src="/system/image_collection_record/file_name/69/processed_900360.jpg"></td>
+          <td class="first"><h3>Gitman Casual Shirt</h3>By <a href="#">Tom James</a>
+            <br>
+            Size: S
+            <br />
+            Color : Brown
+          </td>
+
+
+          <td id="cartQty-td" class="first">
+            <form accept-charset="UTF-8" action="/cart/mycart" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="PATCH" /><input name="authenticity_token" type="hidden" value="B/paeDOFQhnimexfkBZT9CV8q/0WoNw0GF6ww828W44=" /></div>
+              <input id="order_item_product_id" name="order_item[product_id]" type="hidden" value="19" />
+              
+              <input name="order_item[quantity]" type="input" class="cart-qty" value="1">
+            </form>
+
+            <!--
+              <span class="cart-shipping">Economy Int'l Shipping</span>
+            -->
+          </td>
+          <td id="price" class="first">$139
+            <br>
+            <!--
+              <small>+ $49.95</small></td>
+            -->
+            <td id="delete" class="first">
+              <a href="#" onclick="$(this).find('form').submit();false">
+                X
+                <form accept-charset="UTF-8" action="/cart/remove-product/19" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="delete" /><input name="authenticity_token" type="hidden" value="B/paeDOFQhnimexfkBZT9CV8q/0WoNw0GF6ww828W44=" /></div>
+                </form>            </a>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td id="cartQty-td"><strong>ORDER TOTAL:</strong></td>
+              <td id="cartQty-td"><strong>$139.00</strong></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <div class='col-lg-1 col-sm-1 sep hidden-xs'></div>
+      <div class='col-lg-3 col-sm-3'>
+        <!-- banners -->
+        <h3 class='checkout-mtitle visible-xs'>Order Summary</h3>
+        <div class='checkout-cal'>
+          <span class='pull-left' id='checkout-sub'>SUB-TOTAL:</span>
+          <span class='checkout-right' id='checkout-sub'>$139.00</span>
+          <div class='clearfix'></div>
+          <hr>
+          <span class='pull-left total'>
+            <strong>ORDER TOTAL:</strong>
+          </span>
+          <span class='pull-right total'>
+            <strong>$139.00</strong>
+          </span>
+          <div class='clearfix'></div>
+          <hr>
+        </hr>
+      </div>
+      <a class="btn green" href="/cart/checkout">Proceed to Checkout</a>
+      <p id='checkout-secure'>
+        <img alt="Secure checkout" src="/img/secure-checkout.png" />
+        <span class='text-shipping'>SECURE CHECKOUT</span>
+      </p>
+    </div>
+  </div>
+</div>
+</div>

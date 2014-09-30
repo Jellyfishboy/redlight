@@ -4,4 +4,5 @@ $(function()
     {
         type : 'cover'
     });
+    redlight.misc.changeListType();
 });

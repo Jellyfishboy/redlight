@@ -134,21 +134,21 @@
         &.fb {
             width: 32px;
             height: 32px;
-            background: url(../img/fb.png) center center no-repeat #3b5999;
+            background: image-url('fb.png') center center no-repeat #3b5999;
             padding: 10px;
             margin-right: 10px;
         }
         &.tw {
             width: 32px;
             height: 32px;
-            background: url(../img/tw.png) center center no-repeat #00aced;
+            background: image-url('tw.png') center center no-repeat #00aced;
             padding: 10px;
             margin-right: 10px;
         }
         &.gp {
             width: 32px;
             height: 32px;
-            background: url(../img/gp.png) center center no-repeat #d44332;
+            background: image-url('gp.png') center center no-repeat #d44332;
             padding: 10px;
         }
         &:hover {

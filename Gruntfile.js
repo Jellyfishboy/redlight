@@ -131,9 +131,10 @@ module.exports = function (grunt) {
             options: {
                 sassDir: '<%= redlight.app %>/src/sass',
                 cssDir: '<%= redlight.app %>/css',
+                outputStyle: 'nested',
                 imagesDir: '<%= redlight.app %>/img',
                 httpGeneratedImagesPath: '/img',
-                outputStyle: 'nested'
+                httpImagesPath: '/img'
             },
             dist: {
             },
@@ -152,7 +153,8 @@ module.exports = function (grunt) {
                     '<%= redlight.app %>/js/vendor/classie.js',
                     '<%= redlight.app %>/js/vendor/mlpushmenu.js',
                     '<%= redlight.app %>/components/bootstrap/dist/js/bootstrap.min.js',
-                    '<%= redlight.app %>/js/lib/_redlight.js'
+                    '<%= redlight.app %>/js/lib/_redlight.js',
+                    '<%= redlight.app %>/js/lib/redlight.misc.js'
                 ],
                 dest: '<%= redlight.app %>/js/redlight.js',
             },

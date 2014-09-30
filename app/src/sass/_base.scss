@@ -35,7 +35,7 @@ select
     -moz-border-radius: 0 !important;
     -ms-border-radius: 0 !important;
     border-radius: 0 !important;
-    background: white url(/assets/inbox-select-arrow.png) no-repeat 95% 50%;
+    background: white image-url('inbox-select-arrow.png') no-repeat 95% 50%;
     -webkit-appearance: none;
     background-size: 20px !important;
     height: 34px !important;
@@ -312,22 +312,22 @@ hr
     }
     &.step-next 
     {
-        background: url(btn-next.png) right no-repeat #74b71b;
+        background: image-url('btn-next.png') right no-repeat #74b71b;
         font-size: 1.22em;
 
         &:hover 
         {
-            background: url(btn-next.png) right no-repeat #5fa205;
+            background: image-url('btn-next.png') right no-repeat #5fa205;
         }
     }
     &.step-prev 
     {
-        background: url(btn-prev.png) left no-repeat #cfcfcf;
+        background: image-url('btn-prev.png') left no-repeat #cfcfcf;
         font-size: 1.22em;
 
         &:hover 
         {
-            background: url(btn-prev.png) left no-repeat #b1b1b1;
+            background: image-url('btn-prev.png') left no-repeat #b1b1b1;
         }
     }
     &.step-pay 

@@ -27,61 +27,61 @@ footer
 
                 &.instagram 
                 {
-                    background: url(../img/f-instagram.png) no-repeat;
+                    background: image-url('f-instagram.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.instagram:hover 
                 {
-                    background: url(../img/f-instagram-2.png) no-repeat;
+                    background: image-url('f-instagram-2.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.facebook 
                 {
-                    background: url(../img/f-facebook.png) no-repeat;
+                    background: image-url('f-facebook.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.facebook:hover 
                 {
-                    background: url(../img/f-facebook-2.png) no-repeat;
+                    background: image-url('f-facebook-2.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.linkedin 
                 {
-                    background: url(../img/f-linkedin.png) no-repeat;
+                    background: image-url('f-linkedin.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.linkedin:hover 
                 {
-                    background: url(../img/f-linkedin-2.png) no-repeat;
+                    background: image-url('f-linkedin-2.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.twitter 
                 {
-                    background: url(../img/f-twitter.png) no-repeat;
+                    background: image-url('f-twitter.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.twitter:hover 
                 {
-                    background: url(../img/f-twitter-2.png) no-repeat;
+                    background: image-url('f-twitter-2.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.vimeo 
                 {
-                    background: url(../img/f-vimeo.png) no-repeat;
+                    background: image-url('f-vimeo.png') no-repeat;
                     background-size: cover;
                 }
 
                 &.vimeo:hover 
                 {
-                    background: url(../img/f-vimeo-2.png) no-repeat;
+                    background: image-url('f-vimeo-2.png') no-repeat;
                     background-size: cover;
                 }
             }
@@ -94,7 +94,7 @@ footer
                 
                 .form-control
                 {
-                    background: url(../img/mail-letter.png) no-repeat #fff;
+                    background: image-url('mail-letter.png') no-repeat #fff;
                     @include border-radius(0px);
                     border: 1px solid #fff;
                     color: #777;
@@ -104,7 +104,7 @@ footer
                     
                     &:focus 
                     {
-                        background: url(../img/mail-letter-2.png) no-repeat #fff;
+                        background: image-url('mail-letter-2.png') no-repeat #fff;
                         border: 1px solid #3398b2;
                         color: #333;
                     }
