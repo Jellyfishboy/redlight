@@ -162,92 +162,104 @@
 
 
 /* ########### tab section ################# */
+.innertabs.product-detail
+{
+    #myTab
+    {
+        li
+        {
+            a 
+            {
+                text-transform: uppercase;
+                font-size: 0.78em;
+                font-weight: 300;
+            }
+
+            &.active
+            {
+                a 
+                {
+                    font-weight: 700;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.tab-content
+{
+    .product-detail
+    {
+        
+        p 
+        {
+            font-size: 0.78em;
+            line-height: 20px;
+            margin: 10px 0;
+            color: #777;
+
+            a 
+            {
+                color: #4baec7;
+            }
+            .lb 
+            {
+                width: 100px;
+                display: inline-block;
+            }
+        }
+        h1 {
+            color: #999;
+            text-transform: uppercase;
+            border-bottom: 1px solid #d9d9d9;
+            font-size: 0.82em;
+            padding-bottom: 5px;
+        }
+        .tab-data 
+        {
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            font-size: 0.82em;
+            padding: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 40px;
+            color: #999;
+
+            &.value 
+            {
+                background: none;
+                border: 0;
+                font-size: 0.82em;
+                padding: 10px;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 10px;
+                color: #444;
+            }
+            .heading 
+            {
+                border-bottom: 1px solid #d9d9d9;
+                margin-left: -15px;
+                margin-right: -15px;
+                padding: 5px;
+                margin-top: 10px;
+                font-size: 0.82em;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
 
 #inner-block.tab-container.inner-tab-contents.prod-detail {
     background: #f9f9f9;
 }
 
-.tab-content .product-detail {
-    padding-bottom: 60px;
-}
-
-.tab-content .product-detail.box.desc p {
-  font-size: 0.78em;
-  line-height: 20px;
-}
-
-.tab-content .product-detail h1 {
-    color: #999;
-    text-transform: uppercase;
-    border-bottom: 1px solid #d9d9d9;
-    font-size: 0.82em;
-    padding-bottom: 5px;
-}
-
-.tab-content .product-detail p {
-    color: #777;
-    line-height: 22px;
-    font-size: 0.92em;
-    margin: 10px 0;
-}
-
-.tab-content .product-detail p a {
-    color: #4baec7;
-}
-
-.tab-content .product-detail p .lb {
-    width: 100px;
-    display: inline-block;
-}
-
-.product-detail #myTab li a {
-    text-transform: uppercase;
-    font-size: 0.78em;
-    font-weight: 300;
-}
-
-.product-detail #myTab .active a {
-    font-weight: 700;
-    outline: none;
-}
 
 #inner-block.tab-container.innertabs.product-detail {
     background-image: none;
     padding-top: 0;
     border-top: 1px solid #D9D9D9;
-}
-
-.product-detail .tab-data {
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    font-size: 0.82em;
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 40px;
-    color: #999;
-}
-
-
-.product-detail .tab-data.value {
-    background: none;
-    border: 0;
-    font-size: 0.82em;
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 10px;
-    color: #444;
-}
-
-.product-detail .tab-data .heading {
-    border-bottom: 1px solid #d9d9d9;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 5px;
-    margin-top: 10px;
-    font-size: 0.82em;
-    margin-bottom: 10px;
 }
 
 /* ############ RESPONSIVE VIEW ################ */

@@ -5,3 +5,4 @@ app/css/*
 dist
 app/*.html
 app/js/redlight.js
+*.DS_Store
