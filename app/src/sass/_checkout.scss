@@ -4,15 +4,7 @@
 }
 
 .white-kopet {
-  .vertical-line {
-    width: 3px;
-    background-color: #FFF;
-    height: 100%;
-    float: left;
-    position: relative;
-    min-height: 65px;
-    left: 20px;
-  }
+  
   background-color: #00a4bc;
   min-height: 65px;
 }
@@ -921,9 +913,6 @@
   }
 }
 
-.featuredRound h3 span, .featuredPanel ul#highlights li h5, #cart #price {
-  font-weight: 900;
-}
 
 .featuredForYou .preview, .proposal textarea, .form-full, #colorModal .modal-dialog .modal-body img {
   width: 100%;
