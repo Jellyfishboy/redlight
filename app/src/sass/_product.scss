@@ -135,42 +135,44 @@
     input 
     {
         padding: 5px;
-        max-width: 25%;
+        max-width: 30%;
         display: inline-block;
     }
-    .social 
+    ul#social
     {
-        float: left;
-        display: block;
+        list-style-type: none;
+        padding:30px 0 0;
+        border-top: 1px solid #eee;
+        margin:20px 0;
+        li 
+        {
+            display: inline-block;
 
-        &.fb 
-        {
-            width: 32px;
-            height: 32px;
-            background: image-url('fb.png') center center no-repeat #3b5999;
-            padding: 10px;
-            margin-right: 10px;
-        }
-        &.tw 
-        {
-            width: 32px;
-            height: 32px;
-            background: image-url('tw.png') center center no-repeat #00aced;
-            padding: 10px;
-            margin-right: 10px;
-        }
-        &.gp 
-        {
-            width: 32px;
-            height: 32px;
-            background: image-url('gp.png') center center no-repeat #d44332;
-            padding: 10px;
-        }
-        &:hover 
-        {
-            -moz-opacity: 0.6;
-            -webkit-opacity: 0.6;
-            opacity: 0.6;
+            div
+            {
+                width: 32px;
+                height: 32px;
+                padding: 10px;
+                margin-right: 10px;
+                &.fb 
+                {
+                    background: image-url('fb.png') center center no-repeat #3b5999;  
+                }
+                &.tw 
+                {
+                    background: image-url('tw.png') center center no-repeat #00aced;
+                }
+                &.gp 
+                {
+                    background: image-url('gp.png') center center no-repeat #d44332;
+                }
+                &:hover 
+                {
+                    -moz-opacity: 0.6;
+                    -webkit-opacity: 0.6;
+                    opacity: 0.6;
+                }
+            }
         }
     }
 }
@@ -179,11 +181,26 @@
 
 
 @media only screen and (max-width: 768px) {
-    .product .crumb {margin-left: 0; text-align: center;}
+    .product
+    {
+        input
+        {
+            max-width: 8%
+        }
+        .options
+        {
+            div
+            {
+                &:first-child, &:nth-child(2)
+                {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .product-thumb img 
+        {
+            width: 65px;
+        }
+    }
 
-    #product  {padding: 30px 10px;}
-    .product .product-thumb img {width: 65px;}
-    .popup .bio {display: none;}
-
-    .tab-content .box p .lb {display: block;}
 }
