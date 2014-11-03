@@ -10,108 +10,194 @@
     </div>
     <div class='row checkout-panel'>
       <div class='col-lg-8 col-sm-8 hidden-xs'>
-        <!-- checkout form -->
-        <form accept-charset="UTF-8" action="#q" class="new_account_order" id="new_account_order" method="post">
-          <h6 class='checkout-title first'>SHIPPING ADDRESS</h6>
+        <form accept-charset="UTF-8" action="#" class="new_order" id="new_order" method="post">
+          <h3>SHIPPING ADDRESS</h3>
           <div class='form-check-group'>
             <label>First Name</label>
-            <input class="form-checkout form-full" id="firstname" name="account_order[account_shipping_attributes][first_name]" type="text" value="Tom" />
+            <input id="shipping_firstname" name="order[shipping][first_name]" type="text" value="Tom" />
           </div>
           <div class='form-check-group'>
             <label>Last Name</label>
-            <input class="form-checkout form-full" id="lastname" name="account_order[account_shipping_attributes][last_name]" type="text" value="Tom" />
+            <input id="shipping_lastname" name="order[shipping][last_name]" type="text" value="Dallimore" />
           </div>
           <div class='form-check-group'>
-            <label>Street Address</label>
-            <input class="form-checkout form-full js-sh-addr1" id="address1" name="account_order[account_shipping_attributes][street_address1]" type="text" value="62 Test Road" />
+            <label>Telephone</label>
+            <input id="shipping_telephone" name="order[shipping][telephone]" type="text" value="0394323829" />
           </div>
           <div class='form-check-group'>
-            <label>Street Address 2</label>
-            <input class="form-checkout form-full js-sh-addr2" id="address2" name="account_order[account_shipping_attributes][street_address2]" type="text" value="Union Building" />
+            <label>Address</label>
+            <input id="shipping_address" name="order[shipping][street_address]" type="text" value="1 Union Building" />
           </div>
           <div class='form-check-group'>
             <label>City</label>
-            <input class="form-checkout form-full" id="city js-sh-city" name="account_order[account_shipping_attributes][city]" type="text" value="Chicago" />
+            <input id="shipping_city" name="order[shipping][city]" type="text" value="Chicago" />
           </div>
           <div class='form-check-group-half'>
             <label>Zip</label>
-            <input class="form-checkout form-full" id="zip js-sh-zip" name="account_order[account_shipping_attributes][zip]" type="text" value="hwudqowi" />
+            <input id="shipping_zip" name="order[shipping][zip]" type="text" value="hwudqowi" />
           </div>
           <div class='form-check-group-half'>
             <label>Country</label>
-            <select class="form-checkout form-full js-ba" id="account_order_account_shipping_attributes_country" name="account_order[account_shipping_attributes][country]">
+            <select id="shipping_country" name="order[shipping][country]">
               <option value=""></option>
               <option value="AU">Australia</option>
             </select>
           </div>
-          <h6 class='checkout-title'>PAYMENT DETAILS</h6>
+          <h3>PAYMENT DETAILS</h3>
           <div class='form-check-group'>
             <label>First Name</label>
-            <input class='form-checkout form-full' id='firstname' name='payment[first_name]' type='input' value='Tom'>
+            <input id='firstname' name='payment[first_name]' type='input' value='Tom'>
           </div>
           <div class='form-check-group'>
               <label>Last Name</label>
-              <input class='form-checkout form-full' id='lastname' name='payment[last_name]' type='input' value='Dallimore'>
+              <input id='lastname' name='payment[last_name]' type='input' value='Dallimore'>
           </div>
-          <h6 class='checkout-title'>BILLING ADDRESS</h6>
-          <div class='form-check-group-75'>
-            <input class='css-checkbox-22 js-use-my-shipping' id='demo_box_2' name='use_shipping' type='checkbox' value='1'>
-            <label class='css-label-22' for='demo_box_2' name='demo_lbl_2'></label>
-            <span class='text-shipping'>Use my Shipping Address</span>
+          <div class="payment-choices">
+            <div>
+              <input checked="" class="pay-method" name="pay_method" type="radio" value="express-checkout">
+              <img alt="Paypal" src="../img/card-jembot1.png">
+            </div>
+          </div>
+          <h3>BILLING ADDRESS</h3>
+          <div class='form-check-group-full'>
+            <input id='use_shipping_address' name='use_shipping' type='checkbox' value='1'>
+            <span>Use my Shipping Address</span>
           </div>
           <div class='form-check-group'>
-            <label>Street Address</label>
-            <input class="form-checkout form-full js-b-addr1 js-ba" id="billing-address1" name="account_order[account_billing_address_attributes][street_address1]" type="text" value="62 Test Road" />
+            <label>Telephone</label>
+            <input id="billing_telephone" name="order[billing][telephone]" type="text" value="027313289" />
           </div>
           <div class='form-check-group'>
-            <label>Street Address 2</label>
-            <input class="form-checkout form-full js-b-addr2 js-ba" id="billing-address2" name="account_order[account_billing_address_attributes][street_address2]" type="text" value="Union Building" />
+            <label>Address</label>
+            <input id="billing_address" name="order[billing][address]" type="text" value="1 Union Building" />
           </div>
           <div class='form-check-group'>
             <label>City</label>
-            <input class="form-checkout form-full js-b-city js-ba" id="city" name="account_order[account_billing_address_attributes][city]" required="required" type="text" value="Chicago" />
+            <input id="billing_city" name="order[billing][city]" required="required" type="text" value="Chicago" />
           </div>
           <div class='form-check-group-half'>
             <label>Zip</label>
-            <input class="form-checkout form-full js-b-zip js-ba" id="zip" name="account_order[account_billing_address_attributes][zip]" required="required" type="text" value="hwudqowi" />
+            <input id="billing_zip" name="order[billing][zip]" required="required" type="text" value="hwudqowi" />
           </div>
           <div class='form-check-group-half'>
             <label>Country</label>
-            <select class="form-checkout form-full js-ba" id="account_order_account_billing_address_attributes_country" name="account_order[account_billing_address_attributes][country]" required="required">
+            <select id="billing_country" name="order[billing][country]" required="required">
               <option value=""></option>
               <option value="AU">Australia</option>
             </select>
           </div>
-          <input class='btn green hidden-xs' type='submit' value='PLACE ORDER'/>
         </form>
       </div>
-      <!-- MOBILE FORM -->
-      
       <h2 class='checkout-header visible-xs'>Order Summary</h2>
       <div class='col-lg-4 col-sm-4'>
-        <div class='bs-example'>
-          <ul class='list-group'>
-            <li class='list-group-item' id='checkoutCart'>
-              <div class='media'>
-                <a class='pull-left' href='#'>
-                  <img alt='#' class='media-object' src='/system/image_collection_record/file_name/69/processed_900360.jpg'>
-                </a>
-                <div class='media-body'>
-                  <h5 class='media-heading'>
-                    Gitman Casual Shirt
-                    <span>$139</span>
-                  </h5>
-                  <p>
-                    Size:
-                    <strong>Brown</strong>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <table id="cart-checkout">
+          <tbody>
+            <tr>
+              <td>
+                <table class="single-product">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="product-details">
+                          <tbody>
+                            <tr>
+                              <td><img src="../img/pfolio-3.png"></td>
+                              <td>
+                                <table class="product-information">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <h3>Gitman Casual Shirt</h3>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Size: S</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Color : Brown</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    <tr>
+                      <td>
+                        <table class="product-specifics">
+                          <tbody>
+                            <tr>
+                              <td>Quantity</td>
+                              <td>1</td>
+                            </tr>
+                            <tr>
+                              <td>Unit Price</td>
+                              <td id="price">$139</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="single-product">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="product-details">
+                          <tbody>
+                            <tr>
+                              <td><img src="../img/pfolio-3.png"></td>
+                              <td>
+                                <table class="product-information">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <h3>Gitman Casual Shirt</h3>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Size: S</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Color : Brown</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    <tr>
+                      <td>
+                        <table class="product-specifics">
+                          <tbody>
+                            <tr>
+                              <td>Quantity</td>
+                              <td>1</td>
+                            </tr>
+                            <tr>
+                              <td>Unit Price</td>
+                              <td id="price">$139</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
         <form>
           <div id='checkout-calculation'>
+            <hr>
             <div id="checkout-breakdown">
               <div>
                 <span>SUB-TOTAL:</span>
@@ -128,10 +214,14 @@
                 <strong>ORDER TOTAL:</strong>
               </div>
               <div>
-                <strong>$139.00</strong>
+                <strong>$163.00</strong>
               </div>
             </div>
             <hr>
+          </div>
+          <div class='form-check-group-full'>
+            <input id='use_shipping_address' name='use_shipping' type='checkbox' value='1'>
+            <span>Tick this box to acknowledge that you have read and agree with our terms and conditions.</span>
           </div>
           <input class='btn green checkout-button' type='submit' value='PLACE ORDER'>
           <div id='checkout-secure'>
@@ -148,7 +238,7 @@
 <!-- Mobile form content -->
 {{!-- <div class="col-lg-8 col-sm-8 visible-xs">
         <h3 class="checkout-mtitle">Place Order</h3>
-        <h6 class="checkout-title">SHIPPING ADDRESS</h6>
+        <h3>SHIPPING ADDRESS</h3>
         <form role="form" method="post" action="#">
           <div class="form-check-group-full">
             <label>First Name</label>
@@ -180,7 +270,7 @@
               <option class="form-checkout form-full" id="zip">
               </select>
           </div>
-          <h6 class="checkout-title">PAYMENT DETAILS</h6>
+          <h3>PAYMENT DETAILS</h3>
 
           <div class="form-check-group-full">
             <label>First Name</label>
@@ -232,7 +322,7 @@
             <label>CVC</label>
             <input type="input" class="form-checkout form-full" id="cvc"/>
           </div>
-          <h6 class="checkout-title">BILLING ADDRESS</h6>
+          <h3>BILLING ADDRESS</h3>
           <div class="form-check-group-full">
             <input id="demo_box_2" class="css-checkbox-22" type="checkbox"  />
             <label for="demo_box_2" name="demo_lbl_2" class="css-label-22"></label>
