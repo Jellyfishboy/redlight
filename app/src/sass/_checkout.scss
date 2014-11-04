@@ -6,7 +6,7 @@
 
     .col-lg-4
     {
-      min-height: 700px;
+      min-height: 675px;
 
       form
       {
@@ -133,93 +133,6 @@
   }
 }
 
-// .cards 
-// {
-//   overflow: hidden;
-//   display: inline-block;
-//   float: right;
-//   li 
-//   {
-//     -webkit-transition: all .2s;
-//     -moz-transition: all .2s;
-//     -ms-transition: all .2s;
-//     -o-transition: all .2s;
-//     transition: all .2s;
-//     background-image: image-url('card_logos.png');
-//     background-position: 0 0;
-//     float: left;
-//     height: 32px;
-//     margin-right: 8px;
-//     text-indent: -9999px;
-//     width: 51px;
-//     &:last-child 
-//     {
-//       margin-right: 0;
-//     }
-//   }
-//   .visa_electron 
-//   {
-//     background-position: 204px 0;
-//   }
-//   .mastercard 
-//   {
-//     background-position: 153px 0;
-//   }
-//   .maestro 
-//   {
-//     background-position: 102px 0;
-//   }
-//   .discover 
-//   {
-//     background-position: 51px 0;
-//   }
-//   .visa.off 
-//   {
-//     background-position: 0 32px;
-//   }
-//   .visa_electron.off 
-//   {
-//     background-position: 204px 32px;
-//   }
-//   .mastercard.off 
-//   {
-//     background-position: 153px 32px;
-//   }
-//   .maestro.off 
-//   {
-//     background-position: 102px 32px;
-//   }
-//   .discover.off 
-//   {
-//     background-position: 51px 32px;
-//   }
-//   &.card-responsive 
-//   {
-//     margin-bottom: 10px;
-//     margin-top: 5px;
-//     margin-left: 0;
-//     padding-left: 0;
-//     li 
-//     {
-//       margin-bottom: 10px;
-//     }
-//   }
-// }
-// #paymentMethod .cards 
-// {
-//   text-align: left;
-//   width: 20%;
-//   display: block;
-//   float: left;
-//   padding: 0 0 20px;
-// }
-
-// #card_number 
-// {
-//   background: image-url('card-no.png') right no-repeat;
-//   padding-right: 30px;
-// }
-
 @media only screen and (max-width: 991px) {
   .checkout
   {
@@ -227,17 +140,16 @@
     {
       .col-lg-4
       {
-        min-height:1100px;
+        min-height:1210px;
+      }
+      form
+      {
+        .form-check-group, .form-check-group-half
+        {
+          width:100% !important;
+          display: block !important;
+        }
       }
     }
   }
-
-}
-@media only screen and (max-width: 768px) {
-
-  // #paymentMethod .cards 
-  // {
-  //   width: 100%;
-  //   padding-bottom: 5px;
-  // }
 }

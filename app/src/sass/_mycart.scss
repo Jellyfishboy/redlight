@@ -237,6 +237,7 @@
     .checkout-button
     {
       font-size: 1.15em;
+      margin:10px 0;
     }
 
     hr 
@@ -389,6 +390,10 @@
       .col-lg-8
       {
         border-bottom: 20px solid #f9f9f9;
+      }
+      .checkout-button
+      {
+        width:100%;
       }
       #cart 
       {

@@ -9,9 +9,10 @@
       </div>
     </div>
     <div class='row checkout-panel'>
-      <div class='col-lg-8 col-sm-8 hidden-xs'>
+      <h2 class="checkout-header visible-xs">Checkout</h2>
+      <div class='col-lg-8 col-sm-8'>
         <form accept-charset="UTF-8" action="#" class="new_order" id="new_order" method="post">
-          <h3>SHIPPING ADDRESS</h3>
+          <h3>DELIVERY ADDRESS</h3>
           <div class='form-check-group'>
             <label>First Name</label>
             <input id="shipping_firstname" name="order[shipping][first_name]" type="text" value="Tom" />
@@ -233,123 +234,3 @@
     </div>
   </div>
 </div> 
-
-
-<!-- Mobile form content -->
-{{!-- <div class="col-lg-8 col-sm-8 visible-xs">
-        <h3 class="checkout-mtitle">Place Order</h3>
-        <h3>SHIPPING ADDRESS</h3>
-        <form role="form" method="post" action="#">
-          <div class="form-check-group-full">
-            <label>First Name</label>
-            <input type="input" class="form-checkout form-full" id="firstname" required>
-          </div>
-          <div class="form-check-group-full">
-            <label>Last Name</label>
-            <input type="input" class="form-checkout form-full" id="lastname" required>
-          </div>
-          <div class="form-check-group-full">
-            <label>Street Address</label>
-            <input type="input" class="form-checkout form-full" id="address1" required>
-          </div>
-          <div class="form-check-group-full">
-            <label>Street Address 2</label>
-            <input type="input" class="form-checkout form-full" id="address2" required>
-          </div>
-          <div class="form-check-group-full">
-            <label>City</label>
-            <input type="input" class="form-checkout form-full" id="city" required>
-          </div>
-          <div class="form-check-group-full">
-            <label>Zip</label>
-            <input type="number" class="form-checkout form-full" id="zip">
-          </div>
-          <div class="form-check-group-full">
-            <label>Country</label>
-            <select>
-              <option class="form-checkout form-full" id="zip">
-              </select>
-          </div>
-          <h3>PAYMENT DETAILS</h3>
-
-          <div class="form-check-group-full">
-            <label>First Name</label>
-            <input type="input" class="form-checkout form-full" id="firstname" required>
-          </div>
-          <div class="form-check-group-full">
-            <label>Last Name</label>
-            <input type="input" class="form-checkout form-full" id="lastname" required>
-          </div>
-          <div id="paymentMethod">
-            <label>Choose Your Payment Method</label>
-            <div class="clearfix"></div>
-            <div class="col-lg-4 col-sm-4 cards">
-              <input type="radio" id="payment_method">
-              <img id="paypal" src="/assets/wear_my_tags/card-1-e0bf2b829e512bbb501bf4ea0ed338ac.png">
-            </div>
-            <div class="col-lg-4 col-sm-4 cards">
-              <input type="radio" id="payment_method">
-              <img id="paypal" src="/assets/wear_my_tags/card-2-fb41180846cf4543629540b3dca684e9.png">
-            </div>
-            <div class="col-lg-4 col-sm-4 cards">
-              <input type="radio" id="payment_method">
-              <img id="paypal" src="/assets/wear_my_tags/card-3-189e0dc7974f96d36062a364d5c05f19.png">
-            </div>
-            <div class="col-lg-4 col-sm-4 cards">
-              <input type="radio" id="payment_method">
-              <img id="paypal" src="/assets/wear_my_tags/card-3-189e0dc7974f96d36062a364d5c05f19.png">
-            </div>
-          </div>
-          <div class="form-check-group-full">
-            <label>Card Number</label>
-            <input type="input" id="card_number" class="form-checkout form-full">
-          </div>
-          <br>
-          <div class="form-check-group-half">
-            <label>Exp Date</label>
-            <div class="clearfix"></div>
-            <select>
-              <option class="form-checkout form-full" id="exp-month"></option>
-            </select>
-          </div>
-          <div class="form-check-group-half">
-            <label></label>
-            <select>
-              <option class="form-checkout form-full" id="exp-year"></option>
-            </select>
-          </div>
-          <div class="form-check-group-full">
-            <label>CVC</label>
-            <input type="input" class="form-checkout form-full" id="cvc"/>
-          </div>
-          <h3>BILLING ADDRESS</h3>
-          <div class="form-check-group-full">
-            <input id="demo_box_2" class="css-checkbox-22" type="checkbox"  />
-            <label for="demo_box_2" name="demo_lbl_2" class="css-label-22"></label>
-            <span class="text-shipping">Use my Shipping Address</span>
-          </div>
-          <div class="form-check-group-full">
-            <label>Street Address</label>
-            <input type="input" class="form-checkout form-full" id="billing-address1">
-          </div>
-          <div class="form-check-group-full">
-            <label>Street Address 2</label>
-            <input type="input" class="form-checkout form-full" id="billing-address2">
-          </div>
-          <div class="form-check-group-full">
-            <label>City</label>
-            <input type="input" class="form-checkout form-full" id="city">
-          </div>
-          <div class="form-check-group-full">
-            <label>Zip</label>
-            <input type="number" class="form-checkout form-full" id="zip">
-          </div>
-          <div class="form-check-group-full">
-            <label>Country</label>
-            <select>
-              <option class="form-checkout form-full" id="zip">
-            </select>
-          </div>
-          <input type="submit" value="PLACE ORDER" class="btn btn-block green visible-xs" />
-        </form>
-      </div> --}}
