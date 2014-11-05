@@ -1,0 +1,13 @@
+#header-content
+{
+    height:480px;
+    background:grey;
+    margin-top:-40px;
+}
+section
+{
+    &.grey
+    {
+        background-color:#ececec;
+    }
+}
