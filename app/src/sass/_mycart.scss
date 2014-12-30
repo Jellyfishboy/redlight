@@ -35,7 +35,7 @@
     -webkit-border-radius: 0;
     border-radius: 0;
 
-    .col-lg-4
+    .order-summary
     {
       border-left: 5px solid #f9f9f9;
       min-height: 440px;
@@ -80,6 +80,7 @@
               font-weight: 300;
               color: #111;
               line-height: 20px;
+              border-bottom:0;
             }
           }
         }
