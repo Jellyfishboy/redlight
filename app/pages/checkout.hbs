@@ -621,7 +621,8 @@
       </div>
       <h2 class='checkout-header visible-xs'>Order Summary</h2>
       <div class='col-lg-4 col-sm-4 order-summary'>
-        <table id="cart-checkout">
+        <div id="cart-checkout-container">
+          <table id="cart-checkout">
           <tbody>
             <tr>
               <td>
@@ -723,9 +724,59 @@
                 </table>
               </td>
             </tr>
+            <tr>
+              <td>
+                <table class="single-product">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="product-details">
+                          <tbody>
+                            <tr>
+                              <td><img src="../img/pfolio-3.png"></td>
+                              <td>
+                                <table class="product-information">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <h3>Gitman Casual Shirt</h3>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Size: S</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Color : Brown</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    <tr>
+                      <td>
+                        <table class="product-specifics">
+                          <tbody>
+                            <tr>
+                              <td>Quantity</td>
+                              <td>1</td>
+                            </tr>
+                            <tr>
+                              <td>Unit Price</td>
+                              <td id="price">$139</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
           </tbody>
-        </table>
-
+          </table>
+        </div>
         <form>
           <div id='checkout-calculation'>
             <hr>

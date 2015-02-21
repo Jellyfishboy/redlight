@@ -35,6 +35,11 @@
     -webkit-border-radius: 0;
     border-radius: 0;
 
+    #confirm-order-billing
+    {
+      border-bottom:20px solid #f9f9f9;
+      padding-bottom:15px;
+    }
     .order-summary
     {
       border-left: 5px solid #f9f9f9;
@@ -216,7 +221,8 @@
         span
         {
           display: block;
-          margin-top:10px;
+          margin-top:15px;
+          line-height: 0.83em;
 
           &:first-child
           {
@@ -253,10 +259,10 @@
     #cart-mobile
     {
       display: none;
+      margin-bottom: 20px;
     }
     #cart-mobile, #cart-checkout 
     {
-      margin-bottom: 20px;
 
       table.single-product
       {

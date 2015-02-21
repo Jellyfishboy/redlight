@@ -1,6 +1,15 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     body
     {
+        header
+        {
+            #brand
+            {
+                text-align: center;
+                font-size:1.4em;
+                line-height: 50px;
+            }
+        }
         footer #social .container .row div.col-sm-5
         {
             margin-top: 3.8%;
