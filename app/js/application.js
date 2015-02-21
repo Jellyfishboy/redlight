@@ -5,4 +5,5 @@ $(function()
         type : 'cover'
     });
     redlight.misc.changeListType();
+    redlight.misc.duplicateAddress();
 });
