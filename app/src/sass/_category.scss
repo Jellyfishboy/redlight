@@ -1,47 +1,5 @@
 .listing-products 
 {
-  // .searchbar 
-  // {
-  //   width: 99.5%;
-  //   border-bottom: 1px solid #ddd9d5;
-  //   margin: 0 0 30px;
-  //   padding: 0 0 20px;
-
-  //   .searchform 
-  //   {
-  //     padding-left: 0;
-  //     padding-right: 0;
-  //     margin: 0;
-
-  //     input 
-  //     {
-  //       font-size: .82em;
-  //       width: 130px;
-  //       display: inline-block;
-  //       background: image-url('search-icon.png') left no-repeat white;
-  //       min-width: 300px;
-  //       padding: 10px 10px 10px 30px;
-  //     }
-  //     select 
-  //     {
-  //       font-size: .82em;
-  //       width: 130px;
-  //       display: inline-block;
-  //       border: 1px solid #d6d6d6;
-  //       background-color: #FFF;
-  //       -moz-appearance: none;
-  //       -webkit-appearance: none;
-  //       -webkit-border-radius: 0;
-  //       padding: 9px;
-  //     }
-  //     button 
-  //     {
-  //       margin-left: 0;
-  //       min-width: 120px;
-  //       padding: 10px 5px;
-  //     }
-  //   }
-  // }
   .list-header 
   {
     margin-bottom:35px;
@@ -114,6 +72,19 @@
     //     }
     //   }
     // }
+    form
+    {
+      input[type=text]
+      {
+        margin-bottom:0;
+      }
+      input[type=submit]
+      {
+        height:34px;
+        padding:8px 10px;
+        min-width:auto;
+      }
+    }
   }
   #list-wrapper
   {
