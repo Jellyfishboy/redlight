@@ -4,6 +4,7 @@ header
     position: fixed;
     width:100%;
     z-index: 5;
+    border-bottom:1px solid #ddd;
 
     &.shadow-overlay
     {

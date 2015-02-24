@@ -2,15 +2,16 @@
 {
   .list-header 
   {
-    margin-bottom:35px;
+    margin-bottom:25px;
 
     h1 
     {
       font-size: .92em;
       font-family: droid-sans, sans-serif;
       font-weight: 600;
-      margin: 0;
+      margin: 0 20px 0 0;
       padding: 0;
+      display: inline-block;
 
       span 
       {
@@ -74,15 +75,25 @@
     // }
     form
     {
-      input[type=text]
+      display: inline-block;
+      width:50%;
+      margin-right: 20px;
+
+      .form-check-group
       {
-        margin-bottom:0;
+        width:70%;
+        margin-bottom: 0;
+
+        input[type=text]
+        {
+          margin-bottom:0;
+        }
       }
       input[type=submit]
       {
         height:34px;
-        padding:8px 10px;
-        min-width:auto;
+        padding:8px 30px;
+        min-width:inherit;
       }
     }
   }
