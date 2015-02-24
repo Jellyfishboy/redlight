@@ -90,7 +90,7 @@ module.exports = function (grunt) {
             css: {
                 files: [{
                     src: [
-                        '<%= redlight.dist %>/css/application.css'
+                        '<%= redlight.dist %>/css/redlight.css'
                     ]
                 }]
             }
@@ -166,9 +166,9 @@ module.exports = function (grunt) {
                     '<%= redlight.app %>/components/normalize-css/normalize.css',
                     '<%= redlight.app %>/components/animate.css/animate.min.css',
                     '<%= redlight.app %>/components/bootstrap/dist/css/bootstrap.min.css',
-                    '<%= redlight.app %>/css/application.css'
+                    '<%= redlight.app %>/css/redlight.css'
                 ],
-                dest: '<%= redlight.app %>/css/application.css'
+                dest: '<%= redlight.app %>/css/redlight.css'
             }
         },
         uglify: {
@@ -200,7 +200,7 @@ module.exports = function (grunt) {
                     banner: '/* Compiled Redlight stylesheet assets */'
                 },
                 files: {
-                    '<%= redlight.dist %>/css/redlight.css': ['<%= redlight.dist %>/css/application.css']
+                    '<%= redlight.dist %>/css/redlight.css': ['<%= redlight.dist %>/css/redlight.css']
                 }
             }
         }
