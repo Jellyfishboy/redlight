@@ -6,5 +6,7 @@ $(function()
     });
     redlight.misc.changeListType();
     redlight.misc.duplicateAddress();
+    redlight.misc.changeQuantity();
+    redlight.misc.scrollHelper();
     redlight.animation.imageGallery();
 });

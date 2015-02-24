@@ -28,12 +28,41 @@ redlight.misc =
                 {
                     fieldValue = $(this).val();
                     fieldAttribute = $(this).attr('data-field-name');
-                    $('input[data-field-name="billing-' + fieldAttribute + '"]').val(fieldValue);
+                    return $('input[data-field-name="billing-' + fieldAttribute + '"]').val(fieldValue);
                 });
             } 
             else 
             {
                 return $('input[data-field-name*="billing-"').val('');
+            }
+        });
+    },
+
+    changeQuantity: function()
+    {
+        $('.decrease-quantity').click(function() 
+        {
+            if ($('#item-quantity').val() > 1) {
+                return $('#item-quantity').val(parseInt($('#item-quantity').val()) - 1);
+            }
+        });
+        $('.increase-quantity').click(function() {
+            return $('#item-quantity').val(parseInt($('#item-quantity').val()) + 1);
+        });
+    },
+
+    scrollHelper: function()
+    {
+        $('.scroller').bind('scroll', function() {
+            if($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) 
+            {
+                $('#cart-navigation .icon-arrow-down-2').css('display', 'none');
+                $('#cart-navigation .icon-arrow-up-2').css('display', 'block');
+            }
+            else if($(this).scrollTop() == 0)
+            {
+                $('#cart-navigation .icon-arrow-up-2').css('display', 'none');
+                $('#cart-navigation .icon-arrow-down-2').css('display', 'block');
             }
         });
     }

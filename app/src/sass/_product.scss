@@ -108,6 +108,16 @@
         {
             padding: 10px 0;
         }
+        .increase-quantity, .decrease-quantity
+        {
+            cursor:pointer;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
     }
     select 
     {
@@ -155,6 +165,7 @@
         height:34px;
         border: 1px solid #eae6e2;
         font-size: 0.78em;
+        text-align: center;
     }
     ul#social
     {

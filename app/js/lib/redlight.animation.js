@@ -8,7 +8,7 @@ redlight.animation =
                 srcTarget   = $this.attr('data-src');
             $('.product-main img').attr('src', srcTarget);
             $('.product-thumb img').removeClass('selected');
-            $this.addClass('selected');
+            return $this.addClass('selected');
         });
     }
 }

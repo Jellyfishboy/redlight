@@ -33,6 +33,20 @@
       color: #f37e49;
       font-size:12px;
     }
+
+    #cart-navigation
+    {
+      text-align: right;
+      margin-top: 20px;
+
+      i
+      {
+        &.icon-arrow-up-2
+        {
+          display: none;
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 767px) {
