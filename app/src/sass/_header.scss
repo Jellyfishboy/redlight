@@ -34,6 +34,11 @@ header
             &:hover, &.active
             {
                 background-color:#4baec8;
+                border-bottom: 2px solid #4baec8;
+                @include border-radius(0);
+                @include transition-property(border-color);
+                @include transition-duration(0.1s);
+                @include transition-timing-function(linear);
             }
             &:hover a, &.active a
             {
