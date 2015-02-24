@@ -29,6 +29,22 @@
                 border: 2px solid #f37e49;
             }
         }
+
+        &.visible-sm
+        {
+            margin-top: 15px;
+
+            img
+            {
+                width:75px;
+                margin-right:5px;
+
+                &:last-child
+                {
+                    margin-right: 0;
+                }
+            }
+        }
     }
     .content
     {
@@ -102,7 +118,7 @@
     }
     .btn 
     {
-        margin-left: 0;
+        margin-top:10px;
         min-width: 180px;
     }
     p
@@ -129,7 +145,6 @@
         text-transform: uppercase;
         margin: 0;
         padding: 0;
-        padding-top: 20px;
         font-size: 0.82em;
     }
     input 
@@ -137,11 +152,14 @@
         padding: 5px;
         max-width: 30%;
         display: inline-block;
+        height:34px;
+        border: 1px solid #eae6e2;
+        font-size: 0.78em;
     }
     ul#social
     {
         list-style-type: none;
-        padding:30px 0 0;
+        padding:20px 0 0;
         border-top: 1px solid #eee;
         margin:20px 0;
         li 
@@ -192,7 +210,7 @@
         }
         input
         {
-            max-width: 8%
+            max-width: 10% !important;
         }
         .options
         {

@@ -5,6 +5,49 @@
         {
             text-align: center;
         }
+        #main-menu
+        {
+            font-size:1.8em;
+
+            i
+            {
+                line-height: 60px;
+            }
+        }
+
+        #fourzerofour, #fivezerozero
+        {
+            form
+            {
+                .form-check-group
+                {
+                    margin-bottom:20px;
+                }
+            }
+        }
+        .product
+        {
+            input
+            {
+                max-width:40%;
+            }
+        }
+
+        form
+        {
+            .form-check-group, .form-check-group-half
+            {
+              width:100% !important;
+              display: block !important;
+            }
+        }
+        .innertabs
+        {
+            &#product
+            {
+                margin-top: -40px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 767px) {
@@ -19,6 +62,15 @@
                 line-height: 50px;
             }
         }
+        #main-menu, #basket-menu
+        {
+            font-size:1.6em;
+
+            i
+            {
+                line-height: 50px;
+            }
+        }
         footer #social .container .row div.col-sm-5
         {
             margin-top: 3.8%;
@@ -26,6 +78,20 @@
         .main
         {
             padding:90px 10px;
+        }
+        .innertabs
+        {
+            &#product
+            {
+                margin-top: -80px;
+            }
+        }
+        .product
+        {
+            .content
+            {
+                margin-top: 30px;
+            }
         }
     }
 }
