@@ -4,7 +4,7 @@ header
     position: fixed;
     width:100%;
     z-index: 5;
-    border-bottom:1px solid #ddd;
+    // border-bottom:1px solid #ddd;
 
     &.shadow-overlay
     {
@@ -34,11 +34,6 @@ header
             &:hover, &.active
             {
                 background-color:#4baec8;
-                border-bottom: 2px solid #4baec8;
-                @include border-radius(0);
-                @include transition-property(border-color);
-                @include transition-duration(0.1s);
-                @include transition-timing-function(linear);
             }
             &:hover a, &.active a
             {
@@ -67,10 +62,21 @@ header
     {
         text-align: right;
         font-size:1.8em;
+        height:60px;
+        padding:15px;
+        overflow: hidden;
+
+        img
+        {
+            height:30px;
+            vertical-align: inherit;
+            float:right;
+            margin-left: 10px;
+        }
 
         i
         {
-            line-height: 60px;
+            float:right;
         }
     }
 }
