@@ -53,17 +53,26 @@ redlight.misc =
 
     scrollHelper: function()
     {
-        $('.scroller').bind('scroll', function() {
-            if($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) 
+        $scroller = $('.scroller');
+        $scroller.bind('scroll', function() 
+        {
+            if ($(this)[0].offsetHeight < $(this)[0].scrollHeight)    
             {
-                $('#cart-navigation .icon-arrow-down-2').css('display', 'none');
-                $('#cart-navigation .icon-arrow-up-2').css('display', 'block');
-            }
-            else if($(this).scrollTop() == 0)
-            {
-                $('#cart-navigation .icon-arrow-up-2').css('display', 'none');
-                $('#cart-navigation .icon-arrow-down-2').css('display', 'block');
+                if ($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) 
+                {
+                    $('#cart-navigation .icon-arrow-down-2').css('display', 'none');
+                    $('#cart-navigation .icon-arrow-up-2').css('display', 'inline-block');
+                }
+                else if($(this).scrollTop() == 0)
+                {
+                    $('#cart-navigation .icon-arrow-up-2').css('display', 'none');
+                    $('#cart-navigation .icon-arrow-down-2').css('display', 'inline-block');
+                }
             }
         });
+        if (!($scroller[0].offsetHeight < $scroller[0].scrollHeight))    
+        {
+            $('#cart-navigation').css('display', 'none');
+        }
     }
 }

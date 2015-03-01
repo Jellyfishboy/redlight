@@ -39,6 +39,15 @@
       text-align: right;
       margin-top: 20px;
 
+      span
+      {
+        text-transform: uppercase;
+        font-size:0.75em;
+        font-weight:bold;
+        display: inline-block;
+        line-height: 14px;
+      }
+
       i
       {
         &.icon-arrow-up-2
