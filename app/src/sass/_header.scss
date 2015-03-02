@@ -61,22 +61,99 @@ header
     #basket-menu
     {
         text-align: right;
-        font-size:1.8em;
+        font-size:1.4em;
         height:60px;
-        padding:15px;
+        padding:9px;
         overflow: hidden;
 
-        img
+        div#basket-icon, div#search-icon
         {
-            height:30px;
+            background-color: rgba(85,85,85,0.15);
+            @include border-radius(41px);
+            height:41px;
+            width:41px;
             vertical-align: inherit;
             float:right;
-            margin-left: 10px;
         }
 
-        i
+        div#basket-icon
         {
-            float:right;
+            margin-left: 10px;
+            line-height: 46px;
+            overflow: hidden;
+            text-align: left;
+
+            div
+            {
+                background-image:image-url('basket-icon.png');
+                background-position: center;
+                background-size: 24px 21px;
+                background-repeat: no-repeat;
+                height:41px;
+                width:41px;
+                @include border-radius(41px);
+                float:right;
+            }
+
+            span
+            {
+                display: none;
+                float:left;
+            }
+
+            &.active-basket
+            {
+                width:90px;
+                background-color: rgba(75,174,200,0.75);
+
+                div
+                {
+                    background-color: #4baec8;
+                    background-image:image-url('basket-icon-white.png');
+                }
+
+                span
+                {
+                    display: inline-block;
+                    color:#fff;
+                    font-weight:bold;
+                    width:44px;
+                    text-align: center;
+                    margin-left:5px;
+                }
+            }
+
+            &:hover
+            {
+                div
+                {
+                    background-color: #4baec8;
+                    background-image:image-url('basket-icon-white.png');
+                }
+            }
+            
+        }
+
+        div#search-icon
+        {
+            text-align: center;
+            line-height: 40px;
+
+            &:hover
+            {
+                background-color: #4baec8;
+                color: #fff;
+
+                i
+                {
+                    color:#fff;
+                }
+            }
+
+            i
+            {
+                vertical-align: middle;
+            }
         }
     }
 }
