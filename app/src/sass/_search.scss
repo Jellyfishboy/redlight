@@ -1,0 +1,31 @@
+#search-overlay
+{
+    height:100%;
+    width:100%;
+    background: #000;
+    @include opacity(0.4);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:10;
+
+    form
+    {
+        position: absolute;
+        width:100%;
+        top:20%;
+        text-align: center;
+
+        input[type=text]
+        {
+            width:60%;
+            height:50px;
+            background:none;
+            border-top: 0;
+            border-bottom:2px solid #fff;
+            border-left:2px solid #fff;
+            border-right: 2px solid #fff;
+            outline:none;
+        }
+    }
+}
