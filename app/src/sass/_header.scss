@@ -139,7 +139,7 @@ header
             text-align: center;
             line-height: 40px;
 
-            &:hover
+            &:hover, &.active
             {
                 background-color: #4baec8;
                 color: #fff;

@@ -9,4 +9,5 @@ $(function()
     redlight.misc.changeQuantity();
     redlight.misc.scrollHelper();
     redlight.animation.imageGallery();
+    redlight.animation.displaySearch();
 });

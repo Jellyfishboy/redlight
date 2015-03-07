@@ -2,18 +2,23 @@
 {
     height:100%;
     width:100%;
-    background: #000;
-    @include opacity(0.4);
+    background: rgba(0,0,0,0.4);
     position: fixed;
     top:0;
     left:0;
     z-index:10;
+    @include transition-property(opacity);
+    @include transition-timing-function(ease-in);
+    @include transition-duration(0.4s);
+    @include opacity(0);
+    visibility: hidden;
+    color:#fff;
 
     form
     {
         position: absolute;
         width:100%;
-        top:25%;
+        top:20%;
         text-align: center;
 
         #search-input
@@ -43,5 +48,20 @@
                 font-size:2em; 
             }
         }
+    }
+
+    i.icon-close
+    {
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        font-size: 2em;
+        color: #fff; 
+    }
+
+    &.active
+    {
+        @include opacity(1);
+        visibility: visible;
     }
 }
