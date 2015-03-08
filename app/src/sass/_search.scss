@@ -2,7 +2,7 @@
 {
     height:100%;
     width:100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     position: fixed;
     top:0;
     left:0;
@@ -46,6 +46,7 @@
                 top:5px;
                 right:12px;
                 font-size:2em; 
+                cursor: pointer;
             }
         }
     }
@@ -57,6 +58,7 @@
         right: 11px;
         font-size: 2em;
         color: #fff; 
+        cursor: pointer;
     }
 
     &.active
