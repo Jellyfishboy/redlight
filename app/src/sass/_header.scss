@@ -11,149 +11,154 @@ header
         @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.075));
     }
 
-    #brand
+    .container
     {
-        font-family: 'Pacifico', cursive;
-        color: $red;
-        line-height:60px;
-        font-size:1.5em;
-    }
-    ul#nav
-    {
-        list-style-type: none;
-        margin:0;
-        padding: 0;
-        overflow: hidden;
+        position: relative;
 
-        li 
+        #brand
         {
-            float:left;
-            text-align: center;
-            min-width: 100px;
+            font-family: 'Pacifico', cursive;
+            color: $red;
+            line-height:60px;
+            font-size:1.5em;
+        }
+        ul#nav
+        {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            overflow: hidden;
 
-            &:hover, &.active
+            li 
             {
-                background-color:#4baec8;
-            }
-            &:hover a, &.active a
-            {
-                color: #fff;
-            }
+                float:left;
+                text-align: center;
+                min-width: 100px;
 
-            a 
-            {
-                color: #43565c;
-                text-transform: uppercase;
-                font-family: "museo-sans",sans-serif;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 0.85em;
-                padding: 20px 15px;
-                display: block;
-
-                &:hover 
+                &:hover, &.active
+                {
+                    background-color:#4baec8;
+                }
+                &:hover a, &.active a
                 {
                     color: #fff;
                 }
+
+                a 
+                {
+                    color: #43565c;
+                    text-transform: uppercase;
+                    font-family: "museo-sans",sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.85em;
+                    padding: 20px 15px;
+                    display: block;
+
+                    &:hover 
+                    {
+                        color: #fff;
+                    }
+                }
             }
         }
-    }
-    #basket-menu
-    {
-        text-align: right;
-        font-size:1.4em;
-        height:60px;
-        padding:9px;
-        overflow: hidden;
-
-        div#basket-icon, div#search-icon
+        #basket-menu
         {
-            background-color: rgba(85,85,85,0.15);
-            @include border-radius(41px);
-            height:41px;
-            width:41px;
-            vertical-align: inherit;
-            float:right;
-            cursor: pointer;
-        }
-
-        div#basket-icon
-        {
-            margin-left: 10px;
-            line-height: 46px;
+            text-align: right;
+            font-size:1.4em;
+            height:60px;
+            padding:9px;
             overflow: hidden;
-            text-align: left;
 
-            div
+            div#basket-icon, div#search-icon
             {
-                background-image:image-url('basket-icon.png');
-                background-position: center;
-                background-size: 24px 21px;
-                background-repeat: no-repeat;
+                background-color: rgba(85,85,85,0.15);
+                @include border-radius(41px);
                 height:41px;
                 width:41px;
-                @include border-radius(41px);
+                vertical-align: inherit;
                 float:right;
+                cursor: pointer;
             }
 
-            span
+            div#basket-icon
             {
-                display: none;
-                float:left;
-            }
-
-            &.active-basket
-            {
-                width:90px;
-                background-color: rgba(75,174,200,0.75);
+                margin-left: 10px;
+                line-height: 46px;
+                overflow: hidden;
+                text-align: left;
 
                 div
                 {
-                    background-color: #4baec8;
-                    background-image:image-url('basket-icon-white.png');
+                    background-image:image-url('basket-icon.png');
+                    background-position: center;
+                    background-size: 24px 21px;
+                    background-repeat: no-repeat;
+                    height:41px;
+                    width:41px;
+                    @include border-radius(41px);
+                    float:right;
                 }
 
                 span
                 {
-                    display: inline-block;
-                    color:#fff;
-                    font-weight:bold;
-                    width:44px;
-                    text-align: center;
-                    margin-left:5px;
+                    display: none;
+                    float:left;
                 }
+
+                &.active-basket
+                {
+                    width:90px;
+                    background-color: rgba(75,174,200,0.75);
+
+                    div
+                    {
+                        background-color: #4baec8;
+                        background-image:image-url('basket-icon-white.png');
+                    }
+
+                    span
+                    {
+                        display: inline-block;
+                        color:#fff;
+                        font-weight:bold;
+                        width:44px;
+                        text-align: center;
+                        margin-left:5px;
+                    }
+                }
+
+                &:hover
+                {
+                    div
+                    {
+                        background-color: #4baec8;
+                        background-image:image-url('basket-icon-white.png');
+                    }
+                }
+                
             }
 
-            &:hover
+            div#search-icon
             {
-                div
+                text-align: center;
+                line-height: 40px;
+
+                &:hover, &.active
                 {
                     background-color: #4baec8;
-                    background-image:image-url('basket-icon-white.png');
+                    color: #fff;
+
+                    i
+                    {
+                        color:#fff;
+                    }
                 }
-            }
-            
-        }
-
-        div#search-icon
-        {
-            text-align: center;
-            line-height: 40px;
-
-            &:hover, &.active
-            {
-                background-color: #4baec8;
-                color: #fff;
 
                 i
                 {
-                    color:#fff;
+                    vertical-align: middle;
                 }
-            }
-
-            i
-            {
-                vertical-align: middle;
             }
         }
     }
