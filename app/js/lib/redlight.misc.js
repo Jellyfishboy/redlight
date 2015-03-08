@@ -81,5 +81,13 @@ redlight.misc =
                 $('#cart-navigation').css('display', 'none');
             }
         }
+    },
+
+    escapeSearch: function()
+    {
+        $(document).keyup(function (e)
+        {
+          if (e.keyCode == 27) $('#search-overlay i.icon-close').click();
+        });  
     }
 }

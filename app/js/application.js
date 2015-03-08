@@ -8,6 +8,7 @@ $(function()
     redlight.misc.duplicateAddress();
     redlight.misc.changeQuantity();
     redlight.misc.scrollHelper();
+    redlight.misc.escapeSearch();
     redlight.animation.imageGallery();
     redlight.animation.displaySearch();
 });
