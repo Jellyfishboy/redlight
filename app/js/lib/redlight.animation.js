@@ -25,5 +25,13 @@ redlight.animation =
             $('#search-overlay').removeClass('active');
             $('#search-icon').removeClass('active');
         });
+    },
+
+    cartPopup: function()
+    {
+        var $wrapper = $('#cart-container'),
+            wrapperHeight = $wrapper.outerHeight(),
+            navbarHeight = 60;
+        $wrapper.css('top', -(wrapperHeight-navbarHeight));
     }
 }

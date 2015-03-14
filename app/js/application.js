@@ -11,4 +11,5 @@ $(function()
     redlight.misc.escapeSearch();
     redlight.animation.imageGallery();
     redlight.animation.displaySearch();
+    // redlight.animation.cartPopup();
 });

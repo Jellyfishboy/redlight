@@ -4,14 +4,107 @@
     width:400px;
     background: #fff;
     position:absolute;
-    top:60px;
+    top:55px;
     right:9px;   
     padding:15px 10px 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.33);
+    // box-shadow: 0 0 10px rgba(0,0,0,0.33);
+    @include transition-property(top);
+    @include transition-timing-function(ease-in);
+    @include transition-duration(0.4s);
 
-    img
+    table
     {
-        height:55px;
-        width:55px;
+        width:100%;
+
+        &#cart-items
+        {
+            font-size: 0.83em;
+
+            tbody
+            {
+                tr
+                {
+                    border-bottom:20px solid #fff;
+
+                    td
+                    {
+                        &:first-child
+                        {
+                            width:20%;
+                        }
+                        &:nth-child(2)
+                        {
+                            width:55%
+                        }
+                        &:last-child
+                        {
+                            width:25%;
+                            text-align: right;
+                            font-weight: bold;
+                        }
+
+                        table.cart-item-details
+                        {
+                            tbody
+                            {
+                                tr
+                                {
+                                    border-bottom: 0;
+
+                                    td
+                                    {
+                                        text-align: left;
+                                        font-weight:normal;
+                                    }
+
+                                    &:first-child
+                                    {
+                                        td
+                                        {
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:last-child
+                    {
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &#cart-total
+        {
+            font-weight:bold;
+
+            tbody
+            {
+                tr
+                {
+                    td
+                    {
+                        &:last-child
+                        {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        img
+        {
+            height:55px;
+            width:55px;
+        }
+    }
+    a
+    {
+        width:100%;
+        margin-top:1em;
     }
 }
