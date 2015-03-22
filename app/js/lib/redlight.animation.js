@@ -14,7 +14,7 @@ redlight.animation =
 
     displaySearch: function()
     {
-        $('#search-icon').click( function()
+        $('#search-icon').click(function()
         {
             $('#search-overlay').addClass('active');
             $(this).addClass('active');
