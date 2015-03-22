@@ -227,7 +227,6 @@ module.exports = function (grunt) {
         'assemble',
         'copy:styles',
         'cssmin',
-        'clean:css',
         'uglify:server',
         'copy:javascripts',
         'copy:dist'
