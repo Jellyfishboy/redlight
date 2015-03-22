@@ -11,6 +11,12 @@
     @include transition-property(top);
     @include transition-timing-function(ease-in);
     @include transition-duration(0.4s);
+    z-index:-1;
+
+    &.active
+    {
+        top:55px !important;
+    }
 
     table
     {

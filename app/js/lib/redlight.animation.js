@@ -33,5 +33,13 @@ redlight.animation =
             wrapperHeight = $wrapper.outerHeight(),
             navbarHeight = 60;
         $wrapper.css('top', -(wrapperHeight-navbarHeight));
+    },
+
+    displayCart: function()
+    {
+        $('#basket-icon').click(function()
+        {
+            $('#cart-container').toggleClass('active');
+        });
     }
 }
