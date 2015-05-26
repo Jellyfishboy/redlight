@@ -39,6 +39,8 @@
                 outline:none;
                 padding:0 60px 3px 10px;
                 font-size:2.2em; 
+                -webkit-appearance: none;
+                @include border-radius(0px);
             }
             i.icon-search
             {

@@ -30,6 +30,8 @@ form
       border: 1px solid #eae6e2;
       padding: 6px 12px;
       width:100%;
+      -webkit-appearance: none;
+      @include border-radius(0px);
 
       &:focus 
       {
