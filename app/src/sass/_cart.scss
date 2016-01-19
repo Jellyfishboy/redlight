@@ -50,6 +50,28 @@
                             width:25%;
                             text-align: right;
                             font-weight: bold;
+                            position: relative;
+
+                            a.delete-cart-item
+                            {
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                margin-top: 0;
+
+                                i
+                                {
+                                    font-size:0.8em;
+                                }
+                            }
+
+                            div
+                            {
+                                position: absolute;
+                                bottom:0;
+                                right:0;
+                            }
                         }
 
                         table.cart-item-details

@@ -37,7 +37,7 @@ redlight.animation =
 
     displayCart: function()
     {
-        $('#basket-icon').click(function()
+        $('body').on('click', '#basket-icon.active-basket', function()
         {
             $('#cart-container').toggleClass('active');
         });
