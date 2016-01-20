@@ -381,7 +381,10 @@ hr
         }
     }
 }
-
+// Remove carousel gradient
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
 
 
 
