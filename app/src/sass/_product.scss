@@ -176,24 +176,27 @@
         li 
         {
             display: inline-block;
+            margin-right: 10px;
 
             div
             {
                 width: 32px;
                 height: 32px;
-                padding: 10px;
-                margin-right: 10px;
+                color: #fff;
+                line-height: 36px;
+                text-align: center;
+
                 &.fb 
                 {
-                    background: image-url('fb.png') center center no-repeat #3b5999;  
+                    background-color: #3B5998;
                 }
                 &.tw 
                 {
-                    background: image-url('tw.png') center center no-repeat #00aced;
+                    background-color: #00aced;
                 }
                 &.gp 
                 {
-                    background: image-url('gp.png') center center no-repeat #d44332;
+                    background-color: #d44332;
                 }
                 &:hover 
                 {
