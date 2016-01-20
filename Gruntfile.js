@@ -105,7 +105,8 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         'components/**/*',
-                        '*.html'
+                        '*.html',
+                        'img/**/*'
                     ]
                 }]
             },
@@ -133,8 +134,8 @@ module.exports = function (grunt) {
                 cssDir: '<%= redlight.app %>/css',
                 outputStyle: 'nested',
                 imagesDir: '<%= redlight.app %>/img',
-                httpGeneratedImagesPath: '/img',
-                httpImagesPath: '/img'
+                httpGeneratedImagesPath: '../img',
+                httpImagesPath: '../img'
             },
             dist: {
             },
