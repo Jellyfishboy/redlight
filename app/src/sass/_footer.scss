@@ -8,7 +8,7 @@ footer
         
         .container .row div.col-sm-5
         {
-            margin-top: 2.8%;
+            margin-top: 4%;
 
             a 
             {
@@ -19,71 +19,17 @@ footer
                 width: 41px;
                 height: 41px;
                 color:#fff;
+                @include border-radius(41px);
+                border: 2px solid #fff;
+                line-height: 42px;
+                text-align: center;
 
                 &:hover 
                 {
                     color: #197790;
+                    border: 2px solid #197790;
                 }
 
-                &.instagram 
-                {
-                    background: image-url('f-instagram.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.instagram:hover 
-                {
-                    background: image-url('f-instagram-2.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.facebook 
-                {
-                    background: image-url('f-facebook.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.facebook:hover 
-                {
-                    background: image-url('f-facebook-2.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.linkedin 
-                {
-                    background: image-url('f-linkedin.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.linkedin:hover 
-                {
-                    background: image-url('f-linkedin-2.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.twitter 
-                {
-                    background: image-url('f-twitter.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.twitter:hover 
-                {
-                    background: image-url('f-twitter-2.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.vimeo 
-                {
-                    background: image-url('f-vimeo.png') no-repeat;
-                    background-size: cover;
-                }
-
-                &.vimeo:hover 
-                {
-                    background: image-url('f-vimeo-2.png') no-repeat;
-                    background-size: cover;
-                }
             }
         }
         .newsletter-form
