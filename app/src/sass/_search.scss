@@ -6,7 +6,7 @@
     position: fixed;
     top:0;
     left:0;
-    z-index:10;
+    z-index:16;
     @include transition-property(opacity);
     @include transition-timing-function(ease-in);
     @include transition-duration(0.4s);
