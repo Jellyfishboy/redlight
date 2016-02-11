@@ -37,6 +37,18 @@ If you would like to create a distribution package of the application, ready for
 
 This will run through compiling, uglifying, copying the HTML, JavaScript, CSS and Bower dependencies into a folder called `dist` in the root of the application.
 
+##Screenshots
+
+###Desktop
+![Search](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-desktop-1.jpg "Search")  
+![Cart](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-desktop-2.jpg "Cart")  
+![Product](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-desktop-3.jpg "Product")  
+
+###Mobile
+![Category](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-mobile-1.jpg "Category")
+![Cart](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-mobile-2.jpg "Cart")
+![Product](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-mobile-3.jpg "Product")
+
 ##How to contribute
 
 * Fork the project
