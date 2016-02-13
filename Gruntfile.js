@@ -77,6 +77,13 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
+            dist_folder: {
+                files: [{
+                    src: [
+                        '<%= redlight.dist %>/*'
+                    ]
+                }]
+            },
             server: {
                 files: [{
                     src: [
@@ -134,8 +141,10 @@ module.exports = function (grunt) {
                 cssDir: '<%= redlight.app %>/css',
                 outputStyle: 'nested',
                 imagesDir: '<%= redlight.app %>/img',
-                httpGeneratedImagesPath: '../img',
-                httpImagesPath: '../img'
+                imagesPath: '<%= redlight.app %>/img',
+                httpGeneratedImagesPath: 'http://cdn1.tomdallimore.com/redlight/assets/img',
+                httpImagesPath: 'http://cdn1.tomdallimore.com/redlight/assets/img',
+                relative_assets: false
             },
             dist: {
             },
@@ -166,7 +175,6 @@ module.exports = function (grunt) {
                 },
                 src: [
                     '<%= redlight.app %>/components/normalize-css/normalize.css',
-                    '<%= redlight.app %>/components/animate.css/animate.min.css',
                     '<%= redlight.app %>/components/bootstrap/dist/css/bootstrap.min.css',
                     '<%= redlight.app %>/css/redlight.css'
                 ],
@@ -205,6 +213,28 @@ module.exports = function (grunt) {
                     '<%= redlight.dist %>/css/redlight.css': ['<%= redlight.dist %>/css/redlight.css']
                 }
             }
+        },
+        cdnify: {
+            dist: {
+                options: {
+                    base: 'http://cdn0.tomdallimore.com/redlight/assets/',
+                    html: {
+                        'link[rel=icon]' : 'href'
+                    }
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'dist',
+                    src: '**/*.{css,html}',
+                    dest: 'dist'
+                }]
+            }
+        },
+        htmlbuild: {
+            dist: {
+                src: '<%= redlight.dist %>/index.html',
+                dest: '<%= redlight.dist %>/'
+            }
         }
     });
 
@@ -230,6 +260,11 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify:server',
         'copy:javascripts',
-        'copy:dist'
+        'copy:dist',
+        'cdnify:dist',
+        'htmlbuild:dist'
+    ]);
+    grunt.registerTask('clean-dist', [
+        'clean:dist_folder'
     ]);
 };
