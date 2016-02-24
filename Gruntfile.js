@@ -232,7 +232,7 @@ module.exports = function (grunt) {
         },
         htmlbuild: {
             dist: {
-                src: '<%= redlight.dist %>/index.html',
+                src: '<%= redlight.dist %>/*.html',
                 dest: '<%= redlight.dist %>/'
             }
         }
