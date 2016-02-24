@@ -246,11 +246,24 @@ module.exports = function (grunt) {
             'concat:stylesheets',
             'assemble',
             'connect:livereload',
-            'open',
+            // 'open',
             'watch'
         ]);
     });
     grunt.registerTask('build', [
+        'clean:dist',
+        'compass:dist',
+        'concat:javascripts',
+        'concat:stylesheets',
+        'assemble',
+        'copy:styles',
+        'cssmin',
+        'uglify:server',
+        'copy:javascripts',
+        'copy:dist',
+        'htmlbuild:dist'
+    ]);
+    grunt.registerTask('build-demo', [
         'clean:dist',
         'compass:dist',
         'concat:javascripts',
