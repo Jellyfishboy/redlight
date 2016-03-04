@@ -263,20 +263,6 @@ module.exports = function (grunt) {
         'copy:dist',
         'htmlbuild:dist'
     ]);
-    grunt.registerTask('build-demo', [
-        'clean:dist',
-        'compass:dist',
-        'concat:javascripts',
-        'concat:stylesheets',
-        'assemble',
-        'copy:styles',
-        'cssmin',
-        'uglify:server',
-        'copy:javascripts',
-        'copy:dist',
-        'cdnify:dist',
-        'htmlbuild:dist'
-    ]);
     grunt.registerTask('clean-dist', [
         'clean:dist_folder'
     ]);
