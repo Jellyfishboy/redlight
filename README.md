@@ -4,6 +4,14 @@
 
 Redlight is a responsive e-commerce template built using Yeoman, Grunt, Bower, HTML5, CSS3, JavaScript and Handlebar templating. It was purpose built to be used for [Trado](https://github.com/Jellyfishboy/trado), a lightweight, easy to use e-commerce platform designed for sole traders and SME businesses. However, Redlight has been released as an open source template for other developers to utilise in their applications.
 
+[Official site](http://redlight.tomdallimore.com/)
+
+[Demo site](http://redlightdemo.tomdallimore.com/)
+
+[Release notes](http://release.tomdallimore.com/projects/redlight)
+
+This template is also used with [Trado](http://www.trado.io), a new, lightweight, 
+open source e-commerce platform.
 
 ##Getting started
 
