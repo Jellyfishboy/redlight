@@ -246,7 +246,7 @@ module.exports = function (grunt) {
             'concat:stylesheets',
             'assemble',
             'connect:livereload',
-            // 'open',
+            'open',
             'watch'
         ]);
     });
