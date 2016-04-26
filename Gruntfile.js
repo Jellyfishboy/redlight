@@ -147,6 +147,9 @@ module.exports = function (grunt) {
                 relative_assets: false
             },
             dist: {
+                options: {
+                    noLineComments: false
+                }
             },
             server: {
                 options: {
