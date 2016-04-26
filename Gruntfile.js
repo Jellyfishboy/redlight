@@ -148,7 +148,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    noLineComments: false
+                    noLineComments: true
                 }
             },
             server: {
