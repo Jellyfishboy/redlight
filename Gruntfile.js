@@ -142,8 +142,8 @@ module.exports = function (grunt) {
                 outputStyle: 'nested',
                 imagesDir: '<%= redlight.app %>/img',
                 imagesPath: '<%= redlight.app %>/img',
-                httpGeneratedImagesPath: 'http://cdn1.tomdallimore.com/redlight/assets/img',
-                httpImagesPath: 'http://cdn1.tomdallimore.com/redlight/assets/img',
+                httpGeneratedImagesPath: '../img',
+                httpImagesPath: '../img',
                 relative_assets: false
             },
             dist: {
@@ -260,7 +260,6 @@ module.exports = function (grunt) {
         'concat:stylesheets',
         'assemble',
         'copy:styles',
-        'cssmin',
         'uglify:server',
         'copy:javascripts',
         'copy:dist',
