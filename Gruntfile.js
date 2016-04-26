@@ -260,6 +260,7 @@ module.exports = function (grunt) {
         'concat:stylesheets',
         'assemble',
         'copy:styles',
+        'cssmin',
         'uglify:server',
         'copy:javascripts',
         'copy:dist',
