@@ -32,6 +32,13 @@
     @include transition-duration(0.4s);
     z-index:-1;
 
+    p
+    {
+        text-align: center;
+        font-weight: bold;
+        margin: 25px 0;
+    }
+
     &.active
     {
         top:55px !important;

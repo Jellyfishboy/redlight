@@ -23,6 +23,7 @@
             border: 2px solid #f9f9f9;
             margin-bottom: 10px;
             width: 103px;
+            cursor:pointer;
 
             &:hover, &.selected
             {
@@ -129,7 +130,11 @@
     .btn 
     {
         margin-top:10px;
-        min-width: 180px;
+        min-width: 180px !important;
+        border: 0;
+        padding: 15px 20px;
+        height: auto;
+        font-size: 0.90em;
     }
     p
     {
