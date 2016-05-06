@@ -309,6 +309,36 @@
               <option value="AX">Åland Islands</option>
             </select>
           </div>
+          <h3>DELIVERY SERVICE</h3>
+          <div id="delivery-services">
+            {{!-- <p>Please select a delivery country in order to view a list of available delivery services...</p> --}}
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Royal Mail 1st Class</td>
+                  <td>£3.98</td>
+                  <td><input checked="" class="pay-method" name="delivery_method" type="radio" value="1"></td>
+                </tr>
+                <tr>
+                  <td>Green Earth Delivery</td>
+                  <td>£7.09</td>
+                  <td><input checked="" class="pay-method" name="delivery_method" type="radio" value="1"></td>
+                </tr>
+                <tr class="active">
+                  <td>UPS Next Day</td>
+                  <td>£12.44</td>
+                  <td><input checked="true" class="pay-method" name="delivery_method" type="radio" value="1"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <h3>PAYMENT DETAILS</h3>
           <div class='form-check-group'>
             <label>First Name</label>

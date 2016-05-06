@@ -18,6 +18,44 @@
       }
     }
 
+    #delivery-services
+    {
+        font-size: 0.83em;
+        table
+        {
+          thead
+          {
+            th
+            {
+              padding: 5px;
+            }
+          }
+          tbody
+          {
+            tr
+            {
+              cursor: pointer;
+              -webkit-transition: all 0s ease;
+              -moz-transition: all 0s ease;
+              -ms-transition: all 0s ease;
+              -o-transition: all 0s ease;
+              transition: all 0s ease;
+
+              &.active
+              {
+                color: #fff;
+                background: #4baec8;
+              }
+
+              td
+              {
+                padding:5px;
+              }
+            }
+          }
+        }
+    }
+
     #cart-checkout-container
     {
       height:288px;

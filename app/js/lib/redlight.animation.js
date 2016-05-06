@@ -41,5 +41,15 @@ redlight.animation =
         {
             $('#cart-container').toggleClass('active');
         });
+    },
+
+    selectDelivery: function()
+    {
+        $('body').on('click', '#delivery-services table tbody tr', function()
+        {
+            $('#delivery-services table tbody tr').removeClass('active');
+            $(this).addClass('active');
+            $(this).find('td:last-child input').prop("checked", true);
+        });
     }
 }
