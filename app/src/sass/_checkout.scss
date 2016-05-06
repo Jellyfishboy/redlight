@@ -20,9 +20,9 @@
 
     #delivery-services
     {
-        font-size: 0.83em;
         table
         {
+          font-size: 0.83em;
           thead
           {
             th
@@ -50,6 +50,12 @@
               td
               {
                 padding:5px;
+
+                input
+                {
+                  position: relative;
+                  top:-2px;
+                }
               }
             }
           }
