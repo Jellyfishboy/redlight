@@ -24,7 +24,7 @@ redlight.misc =
         {
             if (this.checked) 
             {
-                $('.copy-billing').each(function() 
+                $('.copy-delivery').each(function() 
                 {
                     fieldValue = $(this).val();
                     fieldAttribute = $(this).attr('data-field-name');
@@ -33,7 +33,7 @@ redlight.misc =
             } 
             else 
             {
-                return $('input[data-field-name*="billing-"').val('');
+                return $('input[data-field-name*="billing-"]').val('');
             }
         });
     },
