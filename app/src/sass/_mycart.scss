@@ -265,12 +265,25 @@
       {
         position: relative;
 
-        a.delete-cart-item
+        a
         {
-          position: absolute;
-          right: 10px;
-          top: 25px;
-          z-index:12;
+          &.update-cart-item, &.delete-cart-item
+          {
+            position: absolute;
+            right: 10px;
+            z-index:12;
+            cursor:pointer;
+          }
+
+          &.update-cart-item
+          {
+            top: 25px;
+          }
+
+          &.delete-cart-item
+          {
+            top: 45px;
+          }
         }
       }
     }
