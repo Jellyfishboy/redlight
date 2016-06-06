@@ -260,6 +260,19 @@
     {
       display: none;
       margin-bottom: 20px;
+
+      td
+      {
+        position: relative;
+
+        a.delete-cart-item
+        {
+          position: absolute;
+          right: 10px;
+          top: 25px;
+          z-index:12;
+        }
+      }
     }
     #cart-mobile, #cart-checkout 
     {
