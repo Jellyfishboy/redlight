@@ -48,14 +48,14 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 ##Screenshots
 
 ###Desktop
-![Search](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-desktop-1.jpg "Search")  
-![Cart](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-desktop-2.jpg "Cart")  
-![Product](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-desktop-3.jpg "Product")  
+![Search](https://s3-eu-west-1.amazonaws.com/tomdallimore/redlight-promo/screenshots/redlight-desktop-1.jpg "Search")  
+![Cart](https://s3-eu-west-1.amazonaws.com/tomdallimore/redlight-promo/screenshots/redlight-desktop-2.jpg "Cart")  
+![Product](https://s3-eu-west-1.amazonaws.com/tomdallimore/redlight-promo/screenshots/redlight-desktop-3.jpg "Product")  
 
 ###Mobile
-![Category](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-mobile-1.jpg "Category")
-![Cart](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-mobile-2.jpg "Cart")
-![Product](https://s3-eu-west-1.amazonaws.com/redlight-template/redlight-mobile-3.jpg "Product")
+![Category](https://s3-eu-west-1.amazonaws.com/tomdallimore/redlight-promo/screenshots/redlight-mobile-1.jpg "Category")
+![Cart](https://s3-eu-west-1.amazonaws.com/tomdallimore/redlight-promo/screenshots/redlight-mobile-2.jpg "Cart")
+![Product](https://s3-eu-west-1.amazonaws.com/tomdallimore/redlight-promo/screenshots/redlight-mobile-3.jpg "Product")
 
 ##How to contribute
 
