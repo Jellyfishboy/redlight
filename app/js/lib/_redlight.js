@@ -2,5 +2,6 @@ var redlight =
 {
     misc: {},
     animation: {},
-    mobile: {}
+    mobile: {},
+    modal: {}
 }
