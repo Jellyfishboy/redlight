@@ -44,6 +44,27 @@
   background-color: #f9f9f9;
   background-clip: padding-box;
   outline: none;
+
+  ul.errors {
+      list-style-type: none;
+      padding:10px 20px;
+      margin:0;
+      background:$red;
+      color:#fff;
+      font-size:0.75em;
+      font-weight: 500;
+      display:none;
+          li {
+              margin-bottom:7px;
+              vertical-align: middle;
+                  i {
+                      margin-right: 7px;
+                  }
+                  &:last-child {
+                      margin:0;
+                  }
+          }
+  }
 }
 
 .modal-backdrop {

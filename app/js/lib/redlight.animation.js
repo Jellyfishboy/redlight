@@ -35,6 +35,27 @@ redlight.animation =
         $wrapper.css('top', -(wrapperHeight-navbarHeight));
     },
 
+    temporaryCartPopup: function(milliseconds)
+    {
+        $('#cart-container').addClass('active temp');
+        setTimeout(function()
+        {
+            $('#cart-container').removeClass('active temp');
+        }, milliseconds);
+    },
+
+    autoHideCartPoup: function()
+    {
+        setInterval(function()
+        {
+            var elem = $('#cart-container');
+            if(elem.hasClass('active') && !elem.hasClass('temp'))
+            {
+                elem.removeClass('active');
+            }
+        }, 10000);
+    },
+
     displayCart: function()
     {
         $('body').on('click', '#basket-icon.active-basket', function()
