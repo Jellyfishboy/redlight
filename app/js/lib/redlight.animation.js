@@ -60,7 +60,7 @@ redlight.animation =
     {
         if ($('.checkout-body').length > 0)
         {
-            var checkoutBodyHeight = $('.checkout-body').outerHeight();
+            var checkoutBodyHeight = $('.checkout-body').delay(5000).height();
             $('.order-summary').css('height', checkoutBodyHeight);
         }
     },
