@@ -56,6 +56,15 @@ redlight.animation =
         }, 10000);
     },
 
+    checkoutOrderSummaryHeight: function()
+    {
+        if ($('.checkout-body').length > 0)
+        {
+            var checkoutBodyHeight = $('.checkout-body').outerHeight();
+            $('.order-summary').css('height', checkoutBodyHeight);
+        }
+    },
+
     displayCart: function()
     {
         $('body').on('click', '#basket-icon.active-basket', function()
