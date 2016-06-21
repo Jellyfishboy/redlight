@@ -1,0 +1,30 @@
+.alert
+{
+    padding:15px 25px;
+    max-width:1170px;
+    margin:0px auto 20px;
+    color: #fff;
+    font-weight: 400;
+    @include box-sizing(border-box);
+    height:50px;
+    line-height: 20px;
+    font-size:0.9em;
+    @include border-radius(0px);
+
+    i
+    {
+        margin-right:7px;
+    }
+
+    &.alert-green
+    {
+        background-color: #74b71b;
+        border: 1px solid #5fa205;
+    }
+
+    &.alert-orange
+    {
+        background-color: #ea5f23;
+        border: 1px solid #d15018;
+    }
+}

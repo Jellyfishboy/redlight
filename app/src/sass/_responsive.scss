@@ -1,3 +1,30 @@
+@media only screen and (min-width: 768px) {
+    body
+    {
+        .alert
+        {
+            width: 750px;
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    body
+    {
+        .alert
+        {
+            width: 970px;
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body
+    {
+        .alert
+        {
+            width: 1170px;
+        }
+    }
+}
 @media only screen and (max-width: 991px) {
     body
     {
