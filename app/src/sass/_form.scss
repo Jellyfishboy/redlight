@@ -1,7 +1,7 @@
 form
 {
 
-  .form-check-group label, .form-check-group-half label 
+  .form-check-group label, .form-check-group-half label, .form-check-group-full label 
   {
     display: block;
     color: #8b8b8b;
@@ -17,7 +17,7 @@ form
   }
   .form-check-group, .form-check-group-half, .form-check-group-full
   {
-    select, input[type=text], input[type=search]
+    select, input[type=text], input[type=search], textarea
     {
       display: inline-block;
       height: 34px;
@@ -41,6 +41,11 @@ form
         box-shadow: none;
         border-color: #66afe9;
       }
+    }
+
+    textarea 
+    {
+      height: auto;
     }
   }
   .form-check-group 
