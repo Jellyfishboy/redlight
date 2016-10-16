@@ -350,9 +350,62 @@
               <input id='lastname' name='payment[last_name]' type='text' value='Dallimore'>
           </div>
           <div class="payment-choices">
-            <div>
-              <input checked="" class="pay-method" name="pay_method" type="radio" value="express-checkout">
-              <img alt="Paypal" src="img/paypal-icon.png">
+            <div id="paypal-form-wrapper">
+              <input checked="checked" class="pay-method" name="pay_method" type="radio" value="express-checkout">
+              <img alt="Paypal" src="img/paypal.png" id="paypal-icon">
+            </div>
+            <div id='stripe-form-wrapper'>
+              <input class="pay-method" name="pay_method" type="radio" value="stripe">
+              <img alt="Paypal" src="img/grouped-cards.png">
+            </div>
+            <div id="stripe-form-fields">
+              <input type="hidden" name="order[stripe_card_token]" id="order_stripe_card_token">
+              <div class="form-check-group">
+                <label for="stripe_card_number">Credit Card Number</label>
+                <input type="text" id="stripe_card_number">
+              </div>
+              <div class="form-check-group-half">
+                <label for="stripe_card_month">Expiry Month</label>
+                <select id="stripe_card_month">
+                  <option value="1">1 - January</option>
+                  <option value="2">2 - February</option>
+                  <option value="3">3 - March</option>
+                  <option value="4">4 - April</option>
+                  <option value="5">5 - May</option>
+                  <option value="6">6 - June</option>
+                  <option value="7">7 - July</option>
+                  <option value="8">8 - August</option>
+                  <option value="9">9 - September</option>
+                  <option value="10">10 - October</option>
+                  <option value="11">11 - November</option>
+                  <option value="12">12 - December</option>
+                </select>
+              </div> 
+              <div class="form-check-group-half">
+                <label for="stripe_card_month">Expiry Year</label>
+                <select id="stripe_card_year">
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                  <option value="2031">2031</option>
+                </select>
+              </div>
+              <div class="form-check-group">
+                <label for="stripe_card_code">CV Code</label>
+                <input type="text" id="stripe_card_code">
+              </div>
             </div>
           </div>
           <h3>BILLING ADDRESS</h3>
@@ -852,4 +905,4 @@
       </div>
     </div>
   </div>
-</div> 
+</div>  

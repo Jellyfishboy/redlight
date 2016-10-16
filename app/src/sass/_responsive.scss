@@ -42,7 +42,21 @@
                 line-height: 60px;
             }
         }
+        .payment-choices
+        {
+            
+            div#paypal-form-wrapper, div#credit-card-form-wrapper
+            {
+                display: block;
+                text-align: center;
 
+                input[type=radio] 
+                {
+                    display: block;
+                    margin:25px auto 15px !important;
+                }
+            }
+        }
         .list-header
         {
             form
@@ -206,6 +220,18 @@
                 .form-check-group
                 {
                     width:55% !important;
+                }
+            }
+        }
+
+        .payment-choices
+        {
+            
+            div#paypal-form-wrapper, div#credit-card-form-wrapper
+            {
+                img
+                {
+                    height:47px;
                 }
             }
         }

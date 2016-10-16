@@ -87,10 +87,10 @@ form
   {
     margin:5px 0 30px;
 
-    div
+    div#paypal-form-wrapper, div#stripe-form-wrapper
     {
       display: inline-block;
-      margin-right:10px;
+      margin-right:25px;
 
       &:first-child
       {
@@ -99,12 +99,17 @@ form
           margin:0 15px 0 10px;
         }
       }
-
-
-      input[type=radio] 
+      img
       {
-        margin: 0 15px 0 0;
+        height:60px;
+        cursor: pointer;
       }
+    }
+
+    div#stripe-form-fields
+    {
+      margin-top:30px;
+      display: none;
     }
   }
 }

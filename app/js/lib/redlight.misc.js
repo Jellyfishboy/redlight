@@ -89,5 +89,28 @@ redlight.misc =
         {
           if (e.keyCode == 27) $('#search-overlay i.icon-close').click();
         });  
+    },
+
+    selectPayment: function()
+    {
+        $('.payment-choices img').on('click', function()
+        {
+            var $this = $(this),
+                $checkbox = $this.parent().find('input[type=radio]');
+            $checkbox.prop('checked', true);
+            $('#stripe-form-fields').hide();
+            if ($checkbox.val() == 'stripe')
+            {
+                $('#stripe-form-fields').show();
+            }
+        });
+        $('.payment-choices input:radio').on('click', function()
+        {
+            $('#stripe-form-fields').hide();
+            if ($(this).val() == 'stripe')
+            {
+                $('#stripe-form-fields').show();
+            }
+        });
     }
 }
