@@ -91,25 +91,32 @@ redlight.misc =
         });  
     },
 
-    selectPayment: function()
+    displayCreditCardForm: function(fieldWrapper, radioValue)
     {
         $('.payment-choices img').on('click', function()
         {
             var $this = $(this),
                 $checkbox = $this.parent().find('input[type=radio]');
             $checkbox.prop('checked', true);
-            $('#stripe-form-fields').hide();
-            if ($checkbox.val() == 'stripe')
+            $(fieldWrapper).hide();
+            if ($checkbox.val() == radioValue)
             {
-                $('#stripe-form-fields').show();
+                $(fieldWrapper).show();
             }
         });
         $('.payment-choices input:radio').on('click', function()
         {
-            $('#stripe-form-fields').hide();
-            if ($(this).val() == 'stripe')
+            $(fieldWrapper).hide();
+            if ($(this).val() == radioValue)
             {
-                $('#stripe-form-fields').show();
+                $(fieldWrapper).show();
+            }
+        });
+        $('.payment-choices input:radio').each(function()
+        {
+            if ($(this).is(':checked') && $(this).val() == radioValue)
+            {
+                $(fieldWrapper).show();
             }
         });
     }
