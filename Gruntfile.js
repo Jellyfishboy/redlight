@@ -221,7 +221,7 @@ module.exports = function (grunt) {
         cdnify: {
             dist: {
                 options: {
-                    base: 'http://cdn0.tomdallimore.com/redlight/assets/',
+                    base: 'https://d3rudm8tij9zbc.cloudfront.net/redlight/assets/',
                     html: {
                         'link[rel=icon]' : 'href'
                     }
